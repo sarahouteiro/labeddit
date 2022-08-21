@@ -1,11 +1,11 @@
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import { PostField } from './styled';
-import { Grid } from '@mui/material';
-import Button from '@mui/material/Button';
-import { sendPost } from '../../services/post';
-import { useNavigate } from 'react-router-dom';
-import useForm from '../../hooks/useForm';
+import Box from '@mui/material/Box'
+import TextField from '@mui/material/TextField'
+import { PostField } from './styled'
+import { Grid } from '@mui/material'
+import Button from '@mui/material/Button'
+import { sendPost } from '../../services/post'
+import { useNavigate } from 'react-router-dom'
+import useForm from '../../hooks/useForm'
 
 const PostArea = (props) => {
   const [ form, onChange, clear ] = useForm({body:''})
@@ -54,7 +54,7 @@ const PostArea = (props) => {
             </Grid>
           </form>
         </PostField>
-    );
-  };
+    )
+  }
   
-  export default PostArea;
+  export default PostArea

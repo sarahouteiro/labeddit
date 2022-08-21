@@ -1,11 +1,11 @@
-import Header from '../../components/Header/Header';
-import PostArea from '../../components/PostArea/PostArea';
-import PostList from '../../components/PostList/PostList';
-import Container from '@mui/material/Container';
-import useProtectedPage from '../../hooks/useProtectedPage';
-import { useEffect, useState } from 'react';
-import { BASE_URL } from '../../constants/urls';
-import axios from 'axios';
+import Header from '../../components/Header/Header'
+import PostArea from '../../components/PostArea/PostArea'
+import PostList from '../../components/PostList/PostList'
+import Container from '@mui/material/Container'
+import useProtectedPage from '../../hooks/useProtectedPage'
+import { useEffect, useState } from 'react'
+import { BASE_URL } from '../../constants/urls'
+import axios from 'axios'
 
 const PostListPage = () => {
   useProtectedPage();
@@ -48,4 +48,4 @@ const PostListPage = () => {
     );
   };
   
-  export default PostListPage;
+  export default PostListPage

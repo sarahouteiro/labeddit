@@ -1,12 +1,12 @@
-import { Posts, EnviadoPor, Texto, DivEngajamento, DivComentarios, DivBottom, Carregando } from './styled';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import { useNavigate } from 'react-router-dom';
-import { goToPostDetailPage } from '../../routes/coordinator';
-import CircularProgress from '@mui/material/CircularProgress';
-import { createPostVote, changePostVote, deletePostVote} from '../../services/votes';
-import { arrowUpColor, arrowDownColor } from '../../helpers/arrowHelper';
+import { Posts, EnviadoPor, Texto, DivEngajamento, DivComentarios, DivBottom, Carregando } from './styled'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline'
+import { useNavigate } from 'react-router-dom'
+import { goToPostDetailPage } from '../../routes/coordinator'
+import CircularProgress from '@mui/material/CircularProgress'
+import { createPostVote, changePostVote, deletePostVote} from '../../services/votes'
+import { arrowUpColor, arrowDownColor } from '../../helpers/arrowHelper'
 
 const PostList = (props) => {
 
@@ -71,7 +71,7 @@ const PostList = (props) => {
         )
     })
 
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     return(
         <>
@@ -86,4 +86,4 @@ const PostList = (props) => {
     )
 }
 
-export default PostList;
+export default PostList

@@ -1,6 +1,6 @@
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import { goToLoginPage } from "../routes/coordinator";
+import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
+import { goToLoginPage } from "../routes/coordinator"
 
 const useProtectedPage = () => {
     const navigate = useNavigate()
@@ -13,4 +13,4 @@ const useProtectedPage = () => {
     },[navigate])
 }
 
-export default useProtectedPage;
+export default useProtectedPage

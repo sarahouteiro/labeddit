@@ -1,12 +1,12 @@
-import { Posts, EnviadoPor, Texto, DivEngajamento, DivComentarios, DivBottom } from './styled';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import { useParams, useLocation } from 'react-router-dom';
+import { Posts, EnviadoPor, Texto, DivEngajamento, DivComentarios, DivBottom } from './styled'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline'
+import { useParams, useLocation } from 'react-router-dom'
 
 const PostDetail = () => {
-    const params = useParams();
-    const { state } = useLocation();
+    const params = useParams()
+    const { state } = useLocation()
     console.log(params, state, 'foi agora foi')
 
     return(
@@ -30,4 +30,4 @@ const PostDetail = () => {
     )
 }
 
-export default PostDetail;
+export default PostDetail

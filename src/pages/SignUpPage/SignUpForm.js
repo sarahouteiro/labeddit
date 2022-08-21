@@ -1,11 +1,11 @@
-import { Grid } from '@mui/material';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import { Grid } from '@mui/material'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
 import Checkbox from '@mui/material/Checkbox'
-import { useNavigate } from 'react-router-dom';
-import useForm from '../../hooks/useForm';
-import { signUp } from '../../services/user';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
+import useForm from '../../hooks/useForm'
+import { signUp } from '../../services/user'
+import { useState } from 'react'
 
 const SignUpForm = () => {
     const [ form, onChange, clear ] = useForm({username:'', email:'', password:''})
@@ -15,7 +15,7 @@ const SignUpForm = () => {
         setTerms(!terms)
     }
 
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const onSubmitForm = (event) => {
         event.preventDefault()
@@ -101,7 +101,7 @@ const SignUpForm = () => {
             </Grid>
             </form>
       </>
-    );
-  };
+    )
+  }
   
-  export default SignUpForm ;
+  export default SignUpForm 

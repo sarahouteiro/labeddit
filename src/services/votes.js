@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { BASE_URL } from '../constants/urls';
+import axios from 'axios'
+import { BASE_URL } from '../constants/urls'
 
 export const createPostVote = (id, num) => {
     const body = {

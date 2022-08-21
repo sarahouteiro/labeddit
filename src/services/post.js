@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { BASE_URL } from '../constants/urls';
-import { goToPostListPage } from '../routes/coordinator';
+import axios from 'axios'
+import { BASE_URL } from '../constants/urls'
+import { goToPostListPage } from '../routes/coordinator'
 
 export const sendPost = (body, clear, navigate) => {
     const bodyPayLoad = {
