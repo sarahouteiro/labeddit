@@ -38,6 +38,9 @@ export const DivEngajamento = styled.div`
     width: 80px;
     justify-content: space-between;
     align-items: center;
+    svg {
+        cursor: pointer;
+    }
     p {
         font-size: 12px;
         color: #fcc4b3;

@@ -9,7 +9,9 @@ import { createPostVote, changePostVote, deletePostVote} from '../../services/vo
 import { arrowUpColor, arrowDownColor } from '../../helpers/arrowHelper';
 
 const PostList = (props) => {
+
     const updateVote = (voto, id, uservote) => {
+
         if(uservote === null) {
             createPostVote(id, voto)
             props.sendVote()
@@ -44,17 +46,21 @@ const PostList = (props) => {
                 <Texto onClick={() => goToPostDetailPage(navigate, post.id, post)}>{post.body}</Texto>
                 <DivBottom>
                     <DivEngajamento>
-                    <ArrowUpwardIcon 
-                        style={{ color: arrowUpColor(post.userVote)}} 
-                        fontSize={'small'} 
-                        onClick={() => updateVote(1, post.id, post.userVote)}
-                    />
-                    <p>{post.voteSum=== null ? '0' : post.voteSum}</p> 
-                    <ArrowDownwardIcon 
-                        style={{ color: arrowDownColor(post.userVote)}}  
-                        fontSize={'small'} 
-                        onClick={() => updateVote(-1, post.id, post.userVote)}
-                    />
+                        {props.loading ? <CircularProgress color={'primary'}/> :
+                            <>
+                                <ArrowUpwardIcon 
+                                    style={{ color: arrowUpColor(post.userVote)}} 
+                                    fontSize={'small'} 
+                                    onClick={() => updateVote(1, post.id, post.userVote)}
+                                />
+                                <p>{post.voteSum=== null ? '0' : post.voteSum}</p> 
+                                <ArrowDownwardIcon 
+                                    style={{ color: arrowDownColor(post.userVote)}}  
+                                    fontSize={'small'} 
+                                    onClick={() => updateVote(-1, post.id, post.userVote)}
+                                />
+                            </>
+                        }
                     </DivEngajamento>
                     <DivComentarios onClick={() => goToPostDetailPage(navigate, post.id, post)}>
                         <ChatBubbleOutlineIcon color={'fifth'} fontSize={'small'} />
