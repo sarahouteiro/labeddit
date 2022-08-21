@@ -55,7 +55,7 @@ const Comments = (props) => {
             </Grid>
           </form>
         </PostField>
-    );
-  };
+    )
+  }
   
   export default Comments
