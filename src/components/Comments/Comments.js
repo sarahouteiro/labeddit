@@ -1,16 +1,16 @@
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import { PostField } from './styled';
-import { Grid } from '@mui/material';
-import Button from '@mui/material/Button';
-import useForm from '../../hooks/useForm';
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
-import { sendComment } from '../../services/comment';
+import Box from '@mui/material/Box'
+import TextField from '@mui/material/TextField'
+import { PostField } from './styled'
+import { Grid } from '@mui/material'
+import Button from '@mui/material/Button'
+import useForm from '../../hooks/useForm'
+import { useNavigate, useParams, useLocation } from 'react-router-dom'
+import { sendComment } from '../../services/comment'
 
 const Comments = (props) => {
   const [ form, onChange, clear ] = useForm({body:''})
   const params = useParams()
-  const { state } = useLocation();
+  const { state } = useLocation()
 
   const navigate = useNavigate()
 
@@ -18,7 +18,7 @@ const Comments = (props) => {
     event.preventDefault()
     sendComment(form, clear, navigate, params.id, state)
     props.enviaComentario()
-  };
+  }
 
     return (
         <PostField>
@@ -58,4 +58,4 @@ const Comments = (props) => {
     );
   };
   
-  export default Comments;
+  export default Comments

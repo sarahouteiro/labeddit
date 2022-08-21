@@ -1,11 +1,11 @@
-import { Grid } from '@mui/material';
-import TextField from '@mui/material/TextField';
-import useForm from '../../hooks/useForm';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import { useNavigate } from 'react-router-dom';
-import { login } from '../../services/user';
-import useUnprotectedPage from '../../hooks/useUnprotectedPage';
+import { Grid } from '@mui/material'
+import TextField from '@mui/material/TextField'
+import useForm from '../../hooks/useForm'
+import Button from '@mui/material/Button'
+import SendIcon from '@mui/icons-material/Send'
+import { useNavigate } from 'react-router-dom'
+import { login } from '../../services/user'
+import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 
 const LoginForm = () => {
   const [ form, onChange, clear ] = useForm({email:'', password:''})
@@ -65,7 +65,7 @@ const LoginForm = () => {
               </Button>
             </Grid>
         </form>
-    );
-  };
+    )
+  }
   
-  export default LoginForm;
+  export default LoginForm

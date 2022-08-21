@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { BASE_URL } from '../constants/urls';
-import { goToPostListPage } from '../routes/coordinator';
+import axios from 'axios'
+import { BASE_URL } from '../constants/urls'
+import { goToPostListPage } from '../routes/coordinator'
 
 export const login = (body, clear, navigate) => {
     axios.post(`${BASE_URL}/users/login`, body)

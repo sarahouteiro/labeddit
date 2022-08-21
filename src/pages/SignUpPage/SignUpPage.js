@@ -1,7 +1,7 @@
-import HeaderSignUp from '../../components/Header/HeaderSignUp';
-import { Titulo, Body } from './styled';
-import Container from '@mui/material/Container';
-import SignUpForm from './SignUpForm';
+import HeaderSignUp from '../../components/Header/HeaderSignUp'
+import { Titulo, Body } from './styled'
+import Container from '@mui/material/Container'
+import SignUpForm from './SignUpForm'
 
 const SignUpPage = () => {
 
@@ -18,4 +18,4 @@ const SignUpPage = () => {
     );
   };
   
-  export default SignUpPage;
+  export default SignUpPage

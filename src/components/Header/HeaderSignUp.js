@@ -1,14 +1,14 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import { HeaderBox, StyledToolBar, Img } from './styled';
-import Button from '@mui/material/Button';
-import { goToPostListPage, goToLoginPage } from '../../routes/coordinator';
-import { useNavigate } from 'react-router-dom';
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import { HeaderBox, StyledToolBar, Img } from './styled'
+import Button from '@mui/material/Button'
+import { goToPostListPage, goToLoginPage } from '../../routes/coordinator'
+import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/images/logo.png'
 
 const HeaderSignUp = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <HeaderBox>
@@ -27,4 +27,4 @@ const HeaderSignUp = () => {
   );
 };
 
-export default HeaderSignUp;
+export default HeaderSignUp

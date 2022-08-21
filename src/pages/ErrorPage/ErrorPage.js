@@ -1,13 +1,13 @@
 import Logo from '../../assets/images/logo.png'
-import { DivError, Img } from './styled';
-import { Grid } from '@mui/material';
-import Button from '@mui/material/Button';
-import { useNavigate } from 'react-router-dom';
-import { goToPostListPage } from '../../routes/coordinator';
-import Container from '@mui/material/Container';
+import { DivError, Img } from './styled'
+import { Grid } from '@mui/material'
+import Button from '@mui/material/Button'
+import { useNavigate } from 'react-router-dom'
+import { goToPostListPage } from '../../routes/coordinator'
+import Container from '@mui/material/Container'
 
 const ErrorPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
     return (
       <Container maxWidth='sm'>
@@ -32,7 +32,7 @@ const ErrorPage = () => {
             </Grid>
         </DivError>
       </Container>
-    );
-  };
+    )
+  }
   
-  export default ErrorPage;
+  export default ErrorPage

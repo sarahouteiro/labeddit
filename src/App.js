@@ -1,7 +1,7 @@
-import { ThemeProvider } from '@mui/material';
-import Router from './routes/Router';
-import theme from './constants/theme';
-import { GlobalStyle } from './styled';
+import { ThemeProvider } from '@mui/material'
+import Router from './routes/Router'
+import theme from './constants/theme'
+import { GlobalStyle } from './styled'
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <GlobalStyle/>
       <Router/>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -1,18 +1,18 @@
-import Header from '../../components/Header/Header';
-import PostDetail from '../../components/PostDetail/PostDetail';
-import Comments from '../../components/Comments/Comments';
-import CommentsList from '../../components/CommentsList/CommentsList';
-import Container from '@mui/material/Container';
-import useProtectedPage from '../../hooks/useProtectedPage';
-import { BASE_URL } from '../../constants/urls';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import Header from '../../components/Header/Header'
+import PostDetail from '../../components/PostDetail/PostDetail'
+import Comments from '../../components/Comments/Comments'
+import CommentsList from '../../components/CommentsList/CommentsList'
+import Container from '@mui/material/Container'
+import useProtectedPage from '../../hooks/useProtectedPage'
+import { BASE_URL } from '../../constants/urls'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 const PostDetailPage = () => {
-  const params = useParams();
+  const params = useParams()
 
-  const [ comments, setComments ] = useState([]);
+  const [ comments, setComments ] = useState([])
 
   const getComments = () => {
     axios.get(`${BASE_URL}/posts/${params.id}/comments`, {
@@ -49,7 +49,7 @@ const PostDetailPage = () => {
           <CommentsList listaComentario={comments} sendVote={atualizaListaComentarios}/>
         </Container>
       </>
-    );
-  };
+    )
+  }
   
-  export default PostDetailPage;
+  export default PostDetailPage
